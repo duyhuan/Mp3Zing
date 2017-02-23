@@ -33,7 +33,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fm4-lS-1LT" id="dew-mr-5Lg">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,7 +68,7 @@
         <!--MyMusic-->
         <scene sceneID="0Qp-3C-gJ0">
             <objects>
-                <viewController id="5yw-dw-wbq" sceneMemberID="viewController">
+                <viewController id="5yw-dw-wbq" customClass="LocalVC" customModule="ZingMp3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1C0-WZ-xqQ"/>
                         <viewControllerLayoutGuide type="bottom" id="WGc-rl-gqd"/>
@@ -86,17 +86,22 @@
                                 </connections>
                             </containerView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TtH-ge-pkA">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nkk-H0-vdu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="nkk-H0-vdu">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nkk-H0-vdu" id="aSm-oH-ibW">
                                             <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="5yw-dw-wbq" id="6g2-Vx-VI2"/>
+                                    <outlet property="delegate" destination="5yw-dw-wbq" id="vE9-RB-Bks"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,6 +116,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="MyMusic" image="iconDownload" id="GZS-Ul-PB0"/>
+                    <connections>
+                        <outlet property="tableViewLocal" destination="TtH-ge-pkA" id="7zY-S2-F5Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Oc-TO-Uu1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -225,6 +233,6 @@
         <image name="play.png" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yAV-r2-LIx"/>
+        <segue reference="9Dp-Gq-Y1b"/>
     </inferredMetricsTieBreakers>
 </document>

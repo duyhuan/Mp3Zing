@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E231D6871E5E8E4C00DB5082 /* LocalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231D6861E5E8E4C00DB5082 /* LocalVC.swift */; };
 		E2360AA31E5D3EE30068B03B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2360AA21E5D3EE30068B03B /* AppDelegate.swift */; };
 		E2360AA81E5D3EE30068B03B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2360AA61E5D3EE30068B03B /* Main.storyboard */; };
 		E2360AAA1E5D3EE30068B03B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2360AA91E5D3EE30068B03B /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E231D6861E5E8E4C00DB5082 /* LocalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalVC.swift; sourceTree = "<group>"; };
 		E2360A9F1E5D3EE30068B03B /* ZingMp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZingMp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2360AA21E5D3EE30068B03B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2360AA71E5D3EE30068B03B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				E2360AD61E5D47D20068B03B /* Song.swift */,
 				E2360AA21E5D3EE30068B03B /* AppDelegate.swift */,
 				E2360AC91E5D41D40068B03B /* OnlineVC.swift */,
+				E231D6861E5E8E4C00DB5082 /* LocalVC.swift */,
 				E2360AA61E5D3EE30068B03B /* Main.storyboard */,
 				E2360AA91E5D3EE30068B03B /* Assets.xcassets */,
 				E2360AAB1E5D3EE30068B03B /* LaunchScreen.storyboard */,
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E231D6871E5E8E4C00DB5082 /* LocalVC.swift in Sources */,
 				E2360AD71E5D47D20068B03B /* Song.swift in Sources */,
 				E2360AD41E5D43390068B03B /* TFHppleElement.m in Sources */,
 				E2360ACA1E5D41D40068B03B /* OnlineVC.swift in Sources */,
